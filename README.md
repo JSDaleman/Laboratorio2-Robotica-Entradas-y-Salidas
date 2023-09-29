@@ -8,6 +8,8 @@
 
 ## Codigo de rapid
 
+Arvhivo de codigo en rapid: https://github.com/anhernadezdu/Laboratorio2-Robotica-Entradas-y-Salidas/blob/main/DI_DO.mod
+
 **Funciones utilizadas**
 * **main**
 * **Escribir**
