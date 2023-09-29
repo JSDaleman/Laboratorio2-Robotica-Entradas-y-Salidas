@@ -19,9 +19,15 @@ Cabe agregar que las entradas DI_01 y DI_02 junto con la salida DO_03, se econtr
 Archivo de codigo en rapid: https://github.com/anhernadezdu/Laboratorio2-Robotica-Entradas-y-Salidas/blob/main/DI_DO.mod
 
 **Funciones utilizadas**
-* **main**
-* **Escribir**
-* **Home_robot**
+* **main**: Es la función principal del código ene esta se ejecutan un bloque while infinito para que el programa corra de forma continua, un condicional if..elif...else el cual verifica primero si la entrada DI_01 se acciono si fue asi se esctiva el proceso de escritura con los mensajes correspondientes de proceso en el Flex Pendant, de no haberse accionado DI_01  se revisa si se acciono DI_02 de ser asi se inicia el proceso de posición de mantenimiento tambien con suss correspondientes mensajes en el Flex Pendant, por ultimo si ninguna condición se cumplio no se hace nada y se vuelven a verificar las condiciones en el cliclo infinito. 
+* **Escribir**: Esta función ejecuta en secuencia Home_robot, Comenzar_mov, Home, Sebas, Andre, Sombrero_de_paja, Home, llevar a un punto intermedio y Home_robot. Esto para que del Home del robot  (todas las articulaciones en  0) llevar la herramienta al Home del proceso de escritura luego escribir todo lo que se desea para luego llevar la herramienta al Home del proceso de escritura y volver al Home del robot.
+* **Home_robot**: Esta funcion lleva a todas las aricualaciones a 0 grados con una valocidad de 1000 mm/s y una exactitud de movimiento de 100.
+* **Comenzar_mov**: 
+* **Home**
+* **Sebas**
+* **Andre**
+* **Sombrero_de_paja**
+* **Mantenimiento**
 * **Comenzar_mov**
 * **Home**
 * **Sebas**
