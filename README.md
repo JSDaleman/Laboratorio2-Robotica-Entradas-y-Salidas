@@ -18,3 +18,17 @@
 * **Andre**
 * **Sombrero_de_paja**
 * **Mantenimiento**
+
+# Videos de funcionamiento
+## Funcionamiento en simulación
+
+https://github.com/anhernadezdu/Laboratorio2-Robotica-Entradas-y-Salidas/assets/70998067/863903ef-7461-4aa5-9299-8bf5431cf896
+
+## Funcionamiento en el robot real
+
+[![Alt text](https://img.youtube.com/vi/gwNfsEZBfac/0.jpg)](https://www.youtube.com/watch?v=gwNfsEZBfac)
+
+**Resultado de escritura**
+![Imagen de WhatsApp 2023-09-28 a las 13 53 28_5f96b356](https://github.com/anhernadezdu/Laboratorio2-Robotica-Entradas-y-Salidas/assets/70998067/1d58254f-79b6-41c7-a24a-531d240a2755)
+
+
