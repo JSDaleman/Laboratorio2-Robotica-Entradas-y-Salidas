@@ -19,21 +19,15 @@ Cabe agregar que las entradas DI_01 y DI_02 junto con la salida DO_03, se econtr
 Archivo de codigo en rapid: https://github.com/anhernadezdu/Laboratorio2-Robotica-Entradas-y-Salidas/blob/main/DI_DO.mod
 
 **Funciones utilizadas**
-* **main**: Es la función principal del código ene esta se ejecutan un bloque while infinito para que el programa corra de forma continua, un condicional if..elif...else el cual verifica primero si la entrada DI_01 se acciono si fue asi se esctiva el proceso de escritura con los mensajes correspondientes de proceso en el Flex Pendant, de no haberse accionado DI_01  se revisa si se acciono DI_02 de ser asi se inicia el proceso de posición de mantenimiento tambien con suss correspondientes mensajes en el Flex Pendant, por ultimo si ninguna condición se cumplio no se hace nada y se vuelven a verificar las condiciones en el cliclo infinito. 
-* **Escribir**: Esta función ejecuta en secuencia Home_robot, Comenzar_mov, Home, Sebas, Andre, Sombrero_de_paja, Home, llevar a un punto intermedio y Home_robot. Esto para que del Home del robot  (todas las articulaciones en  0) llevar la herramienta al Home del proceso de escritura luego escribir todo lo que se desea para luego llevar la herramienta al Home del proceso de escritura y volver al Home del robot.
-* **Home_robot**: Esta funcion lleva a todas las aricualaciones a 0 grados con una valocidad de 1000 mm/s y una exactitud de movimiento de 100.
-* **Comenzar_mov**: 
-* **Home**
-* **Sebas**
-* **Andre**
-* **Sombrero_de_paja**
-* **Mantenimiento**
-* **Comenzar_mov**
-* **Home**
-* **Sebas**
-* **Andre**
-* **Sombrero_de_paja**
-* **Mantenimiento**
+* **main:** Es la función principal del código ene esta se ejecutan un bloque while infinito para que el programa corra de forma continua, un condicional if..elif...else el cual verifica primero si la entrada DI_01 se acciono si fue asi se esctiva el proceso de escritura con los mensajes correspondientes de proceso en el Flex Pendant, de no haberse accionado DI_01  se revisa si se acciono DI_02 de ser asi se inicia el proceso de posición de mantenimiento tambien con suss correspondientes mensajes en el Flex Pendant, por ultimo si ninguna condición se cumplio no se hace nada y se vuelven a verificar las condiciones en el cliclo infinito. 
+* **Escribir:** Esta función ejecuta en secuencia Home_robot, Comenzar_mov, Home, Sebas, Andre, Sombrero_de_paja, Home, llevar a un punto intermedio y Home_robot. Esto para que del Home del robot  (todas las articulaciones en  0) llevar la herramienta al Home del proceso de escritura luego escribir todo lo que se desea para luego llevar la herramienta al Home del proceso de escritura y volver al Home del robot.
+* **Home_robot:** Esta funcion lleva a todas las aricualaciones a 0 grados con una valocidad de 1000 mm/s y una exactitud de movimiento de 100.
+* **Comenzar_mov:** Se lleva del Home del robot a un punto intermedio para evitar un limite del mecanismo para luego dirigirse por ultimo al Home del proceso de escritura todo esto con una valocidad de 1000 mm/s y una exactitud de movimiento de 100.
+* **Home:** Permite llevar la herramienta al la posición del Home del porceso de escritura con una valocidad de 1000 mm/s y una exactitud de movimiento de 100.
+* **Sebas:** Realiza el proceso de escritura de "Sebas" primero llevando la herramienta a una posición de acercamiento a la superficie de escritura con una valocidad de 1000 mm/s y una exactitud de movimiento de 10 luego se hace un acercamiento a la superficie con una valocidad de 500 mm/s y una exactitud de movimiento de 10 hasta el punto de contacto con la herramienta luego toda la escriura de las letras se hace el trazo con una valocidad de 200 mm/s y una exactitud de movimiento de 1 y luego de terminarse la primera letra la herramienta se a leja de la superficie con una valocidad de 1000 mm/s y una exactitud de movimiento de 10. las condiciones de movimiento de la herramienta de movimientos sin contacto, de acercamiento, alejamiento y trazo se mantienen en cada letra como se describieron anterioarmente.
+* **Andre:** Realiza el proceso de escritura de "Andre" primero llevando la herramienta a una posición de acercamiento a la superficie de escritura con una valocidad de 1000 mm/s y una exactitud de movimiento de 10 luego se hace un acercamiento a la superficie con una valocidad de 500 mm/s y una exactitud de movimiento de 10 hasta el punto de contacto con la herramienta luego toda la escriura de las letras se hace el trazo con una valocidad de 200 mm/s y una exactitud de movimiento de 1 y luego de terminarse la primera letra la herramienta se a leja de la superficie con una valocidad de 1000 mm/s y una exactitud de movimiento de 10. las condiciones de movimiento de la herramienta de movimientos sin contacto, de acercamiento, alejamiento y trazo se mantienen en cada letra como se describieron anterioarmente.
+* **Sombrero_de_paja:**  Realiza el proceso de dibujo de "un sombrero de paja" primero llevando la herramienta a una posición de acercamiento a la superficie de escritura con una valocidad de 1000 mm/s y una exactitud de movimiento de 10 luego se hace un acercamiento a la superficie con una valocidad de 500 mm/s y una exactitud de movimiento de 10 hasta el punto de contacto con la herramienta luego toda la escriura de las letras se hace el trazo con una valocidad de 200 mm/s y una exactitud de movimiento de 1 y luego de terminarse la primera letra la herramienta se a leja de la superficie con una valocidad de 1000 mm/s y una exactitud de movimiento de 10. las condiciones de movimiento de la herramienta de movimientos sin contacto, de acercamiento, alejamiento y trazo se mantienen en cada letra como se describieron anterioarmente.
+* **Mantenimiento:** Esta función lleva al Home del robot luego a la posición de mantenimiento en la cual la ariculacion 1 esta a 60° y la articulación 5 a -45° con una valocidad de 1000 mm/s y una exactitud de movimiento de 100.
 
 # Videos de funcionamiento
 ## Funcionamiento en simulación
